@@ -17,7 +17,7 @@ body {
 
 canvas {
 	display: none;
-	background: @musicDark;
+	background: @darkDark;
 }
 
 .content {
@@ -218,89 +218,56 @@ header {
 	line-height: 1 !important;
 	overflow: hidden;
 
-	&.poster-news {
+	&.poster-light {
 		.logo-wrapper {
-			.logo.logo-news {
+			padding-bottom: @grid-gutter-width * 2 - 14;
+
+			.logo.logo-light {
 				display: inline-block !important;
 				border: none;
 
 				.sixteen-by-nine& {
-					height: 40px;
 					width: auto;
 				}
 			}
 		}
 	}
 
-	&.poster-music {
-		background: @musicDark;
-		color: @musicLight;
+	&.poster-dark {
+		background: @darkDark;
+		color: @darkLight;
 
 		.logo {
-			border: 1px solid @musicLight;
+			border: 1px solid @darkLight;
 		}
 
 		.logo-wrapper {
-			background: @musicDark;
+			background: @darkDark;
 			padding-bottom: @grid-gutter-width * 2 - 14;
 
-			.logo.logo-music {
+			.logo.logo-dark {
 				display: inline-block !important;
 				border: none;
 
 				.sixteen-by-nine& {
-					width: 242px;
-					height: 65px;
+					width: 59px;
+					height: 60px;
 					overflow: hidden;
-					background: url('../assets/npr-music-logo-small.png') no-repeat;
-					padding-left: 242px;
+					background: url('../assets/dark-logo-small.jpg') no-repeat;
 				}
-			}
-		}
-	}
-
-	&.poster-snap-judgement {
-		background: #C66137;
-		color: #fff;
-
-		.logo-wrapper {
-			background: #C66137;
-			color: #fff;
-			padding-bottom: @grid-gutter-width * 2 - 14;
-
-			.logo.logo-snap-judgement {
-				display: inline-block !important;
-				border: none;
-				width: 300px;
-
-				.sixteen-by-nine& {
-					width: 150px;
-				}
-			}
-		}
-	}
-
-	&.poster-fresh-air {
-		.logo-wrapper {
-			padding-bottom: @grid-gutter-width * 2 - 14;
-
-			.logo.logo-fresh-air {
-				display: inline-block !important;
-				border: none;
 			}
 		}
 	}
 
 	&.sixteen-by-nine {
 		height: 360px;
-		padding: @grid-gutter-width;
-
+/*
 		.quote& {
 			.left-quote {
 				top: @grid-gutter-width;
 				left: @grid-gutter-width;
 			}
-		}
+		}*/
 
 		blockquote {
 			margin-bottom: 20px;
@@ -308,6 +275,7 @@ header {
 
 		.logo-wrapper {
 			padding: @grid-gutter-width;
+			padding-top: 0px;
 
 			img {
 				width: 150px;
